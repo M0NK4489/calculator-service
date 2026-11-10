@@ -2,7 +2,7 @@
 
 Requires Python 3.8+.
 
-1. Extract the ZIP and open a terminal in the folder containing `server.py`.
+1. Extract the ZIP or clone the repository, then open a terminal in the folder containing `server.py`.
 2. Run `python server.py`.
 3. Open http://localhost:8080 in your browser.
 4. Try these sums, pressing **C** between each:
