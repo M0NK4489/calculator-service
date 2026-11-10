@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 16px;
+    background: #f4f4f4;
+    color: #222;
+}
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.calculator {
+    width: 300px;
+    padding: 16px;
+    background: #222;
+    border-radius: 12px;
+}
+
+.screen {
+    min-height: 70px;
+    margin-bottom: 12px;
+    padding: 12px;
+    background: #e8f0e8;
+    border-radius: 6px;
+    text-align: right;
+    font-family: Consolas, monospace;
+}
+
+.screen-top {
+    min-height: 18px;
+    font-size: 14px;
+    color: #555;
+}
+
+.screen-main {
+    font-size: 28px;
+    word-break: break-all;
+}
+
+.screen-main.error {
+    font-size: 16px;
+    color: #c00;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.buttons button {
+    padding: 16px 0;
+    font-size: 20px;
+    color: white;
+    background: #444;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    filter: brightness(1.25);
+}
+
+.buttons .light {
+    background: #666;
+}
+
+.buttons .operator {
+    background: #d97706;
+}
+
+.buttons .equals {
+    background: #2563eb;
+}
+
+.xml-boxes {
+    flex: 1;
+    min-width: 280px;
+}
+
+.box {
+    margin-bottom: 12px;
+    padding: 12px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.box-title {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+pre {
+    margin: 0;
+    font-size: 13px;
+    color: #444;
+    white-space: pre-wrap;
+    word-break: break-all;
+}

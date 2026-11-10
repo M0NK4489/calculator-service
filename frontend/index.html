@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="/styles.css">
+    <!-- defer runs the script after the HTML elements below have been read. -->
+    <script src="/calculator.js" defer></script>
+</head>
+<body>
+    <div id="root">
+        <div class="layout">
+            <div class="calculator">
+                <div class="screen">
+                    <div id="last-sum" class="screen-top"></div>
+                    <div id="screen" class="screen-main">0</div>
+                </div>
+                <!-- Each row here is one row of calculator buttons. JavaScript reads their labels. -->
+                <div class="buttons">
+                    <button class="light">C</button><button class="light">(</button><button class="light">)</button><button class="operator">÷</button>
+                    <button>7</button><button>8</button><button>9</button><button class="operator">×</button>
+                    <button>4</button><button>5</button><button>6</button><button class="operator">−</button>
+                    <button>1</button><button>2</button><button>3</button><button class="operator">+</button>
+                    <button class="light">⌫</button><button>0</button><button>.</button><button class="equals">=</button>
+                </div>
+            </div>
+            <div class="xml-boxes">
+                <div class="box">
+                    <div class="box-title">XML sent to the server</div>
+                    <pre id="sent-xml">Press = to see the XML</pre>
+                </div>
+                <div class="box">
+                    <div class="box-title">XML the server sent back</div>
+                    <pre id="reply-xml">-</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
